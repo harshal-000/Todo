@@ -1,0 +1,104 @@
+body{
+  display: flex;
+  justify-content: center;
+}
+
+.todolsit{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: gold;
+}
+
+h1{
+  font-size: 4rem;
+}
+li{
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px 0;
+}
+button{
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px solid;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5 ease;
+}
+
+.add-btn{
+  background-color: green;
+  height: 45px;
+  padding: 0px 5px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.add-btn:hover{
+  background-color: lightseagreen;
+}
+
+.move{
+  background-color: coral;
+  margin:0 10px
+}
+
+.delettask{
+  background-color: darkturquoise;
+}
+#taskip{
+  height: 30px;
+  padding: 5px;
+  width: 300px;
+  border: none;
+  border-radius: 10px;
+}
+
+input[type="text"]{
+  font-size: 1.6rem;
+}
+
+.text{
+  flex: 1;
+}
+
+@media (max-width:460px){
+
+  .todolsit{
+    padding: 0;
+  }
+  
+  h1{
+    font-size: 2rem;
+  }
+
+  #taskip{
+    padding: 4px 0;
+    max-width:280px;
+    margin: 5px 0px;
+  }
+
+  .add-btn{
+    padding: 0 5px;
+    font-size: 1rem;
+  }
+
+  li{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 0;
+  }
+}
